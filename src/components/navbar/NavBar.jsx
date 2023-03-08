@@ -48,7 +48,7 @@ const NavBar = () => {
           </div>
         )}
         <div className="right">
-          <span>Fiverr Business</span>
+          <span>Five Business</span>
           <span>Explore</span>
           <span>English</span>
           {!CurrentUser && <span>Sign in</span>}
