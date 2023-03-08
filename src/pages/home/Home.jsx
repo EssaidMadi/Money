@@ -1,5 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import box3 from "./../../assets/box_03.jpg";
+import share from "./../../assets/share.png";
+import about from "./../../assets/about.jpg";
+import follow from "./../../assets/follow.png";
+import banner from "./../../assets/banner.jpg";
+import insta1 from "./../../assets/insta_01.jpeg";
+import insta2 from "./../../assets/insta_03.jpeg";
+import insta3 from "./../../assets/insta_09.jpeg";
 import "./home.scss";
 
 const Home = () => {
@@ -23,16 +31,18 @@ const Home = () => {
           <div className="section__left">
             <div className="article">
               <div className="article__left">
-                <img src="" alt="" />
+                <img src={box3} alt="" />
               </div>
               <div className="article__right">
                 <div className="top">
-                  <span>Lifestyle</span>
+                  <span className="lifestyle">Lifestyle</span>
                   <h4>
                     <Link>How to Dress for Those In-Between Days</Link>
                   </h4>
 
-                  <span>Posted on June 16, 2018 - By Amanda - 5 Comments</span>
+                  <span>
+                    <i> Posted on June 16, 2018 - By Amanda - 5 Comments</i>
+                  </span>
                   <p>
                     Sed pulvinar sapien eu eleifend mattis. Curabitur ipsum
                     urna, aliquam a odio et, dapibus vulputate leo. Nulla nec
@@ -40,9 +50,10 @@ const Home = () => {
                     Praesent et dapibus turpis.
                   </p>
                 </div>
+                <hr />
                 <div className="bottom">
                   <span>CONTINUE READING</span>
-                  <img src="" alt="" />
+                  <img src={share} alt="" />
                 </div>
               </div>
             </div>
@@ -52,7 +63,7 @@ const Home = () => {
               <h3>
                 <span>About Me</span>
               </h3>
-              <img src="" alt="" />
+              <img src={about} alt="" />
               <p>
                 Duis scelerisque sem at erat accumsan sodales. Duis non mattis
                 risus, ut vehicula orci. Cras mollis augue at metus tincidunt
@@ -62,41 +73,43 @@ const Home = () => {
 
             <div className="advertise">
               <h3>
-                <span>advertise</span>
+                <span>Advertise</span>
               </h3>
-              <img src="" alt="" />
+              <img src={banner} alt="" />
             </div>
 
             <div className="Follow">
               <h3>
                 <span>Follow on Instagram</span>
               </h3>
-              <img src="" alt="" />
+              <img src={follow} alt="" />
             </div>
 
             <div className="Blog">
               <h3>
                 <span>Blog Categories</span>
               </h3>
+              <hr />
               <Link>
-                <span>LifeStyle (12)</span>
+                <span className="blog__text">LifeStyle (12)</span>
               </Link>
-
+              <hr />
               <Link>
-                <span>Travel (12)</span>
+                <span className="blog__text">Travel (12)</span>
               </Link>
-
+              <hr />
               <Link>
-                <span>Fashion (12)</span>
+                <span className="blog__text">Fashion (12)</span>
               </Link>
-
+              <hr />
               <Link>
-                <span>Blogging (12)</span>
+                <span className="blog__text">Blogging (12)</span>
               </Link>
-
+              <hr />
               <Link>
-                <span>Marketing (12)</span>
+                <span className="blog__text">Marketing (12)</span>
               </Link>
+              <hr />
             </div>
 
             <div className="Latest">
@@ -105,7 +118,7 @@ const Home = () => {
               </h3>
               <div className="picture">
                 <div className="picture__left">
-                  <img src="" alt="" />
+                  <img src={insta1} alt="" />
                 </div>
                 <div className="picture__right">
                   <h5>A Beautiful Minimal Website Design</h5>
@@ -115,7 +128,7 @@ const Home = () => {
 
               <div className="picture">
                 <div className="picture__left">
-                  <img src="" alt="" />
+                  <img src={insta2} alt="" />
                 </div>
                 <div className="picture__right">
                   <h5>A Beautiful Minimal Website Design</h5>
@@ -125,7 +138,7 @@ const Home = () => {
 
               <div className="picture">
                 <div className="picture__left">
-                  <img src="" alt="" />
+                  <img src={insta3} alt="" />
                 </div>
                 <div className="picture__right">
                   <h5>A Beautiful Minimal Website Design</h5>
