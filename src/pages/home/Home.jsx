@@ -151,15 +151,35 @@ const Home = () => {
               <h3>
                 <span>Tag Cloud</span>
               </h3>
-              <Link to="/">design</Link>
-              <Link to="/">art</Link>
-              <Link to="/">gallery</Link>
-              <Link to="/">fashion</Link>
-              <Link to="/">modern</Link>
-              <Link to="/">creative</Link>
-              <Link to="/">respo</Link>
-              <Link to="/">antica</Link>
-              <Link to="/">mobsen</Link>
+              <div className="links">
+                <Link className="link" to="/">
+                  design
+                </Link>
+                <Link className="link" to="/">
+                  art
+                </Link>
+                <Link className="link" to="/">
+                  gallery
+                </Link>
+                <Link className="link" to="/">
+                  fashion
+                </Link>
+                <Link className="link" to="/">
+                  modern
+                </Link>
+                <Link className="link" to="/">
+                  creative
+                </Link>
+                <Link className="link" to="/">
+                  respo
+                </Link>
+                <Link className="link" to="/">
+                  antica
+                </Link>
+                <Link className="link" to="/">
+                  mobsen
+                </Link>
+              </div>
             </div>
           </div>
         </div>
