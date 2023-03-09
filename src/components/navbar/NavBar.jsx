@@ -82,7 +82,7 @@ const NavBar = () => {
         </div>
       </div>
 
-      {active && (
+      {(active || pathname !== "/") && (
         <>
           <hr />
           <div className="menu">

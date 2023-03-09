@@ -122,6 +122,7 @@ const Details = () => {
                 </div>
               </div>
             </div>
+            <div className="may_like"></div>
           </div>
           <div className="section__right">
             <div className="about">
