@@ -3,6 +3,7 @@ import { Outlet, createBrowserRouter, RouterProvider } from "react-router-dom";
 import NavBar from "./components/navbar/NavBar";
 import Footer from "./components/footer/Footer";
 import Home from "./pages/home/Home";
+import Details from "./pages/details/Details";
 
 function App() {
   const Layout = () => {
@@ -23,6 +24,10 @@ function App() {
         {
           path: "/",
           element: <Home />,
+        },
+        {
+          path: "/detail/:id",
+          element: <Details />,
         },
       ],
     },

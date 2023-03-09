@@ -32,29 +32,31 @@ const Home = () => {
           <div className="section__left">
             <div className="articl__1">
               {posts.map((post) => (
-                <div className="article">
-                  <div key={post.id} className="article__left">
-                    <img src={box3} alt="" />
-                  </div>
-                  <div className="article__right">
-                    <div className="top">
-                      <span className="lifestyle">Lifestyle</span>
-                      <h4>
-                        <Link>{post.title}</Link>
-                      </h4>
+                <Link to="/detail/123">
+                  <div key={post.id} className="article">
+                    <div className="article__left">
+                      <img src={box3} alt="" />
+                    </div>
+                    <div className="article__right">
+                      <div className="top">
+                        <span className="lifestyle">Lifestyle</span>
+                        <h4>
+                          <Link>{post.title}</Link>
+                        </h4>
 
-                      <span>
-                        <i> Posted on {post.date} - By Amanda - 5 Comments</i>
-                      </span>
-                      <p>{post.desc}</p>
-                    </div>
-                    <hr />
-                    <div className="bottom">
-                      <span>CONTINUE READING</span>
-                      <img src={share} alt="" />
+                        <span>
+                          <i> Posted on {post.date} - By Amanda - 5 Comments</i>
+                        </span>
+                        <p>{post.desc}</p>
+                      </div>
+                      <hr />
+                      <div className="bottom">
+                        <span>CONTINUE READING</span>
+                        <img src={share} alt="" />
+                      </div>
                     </div>
                   </div>
-                </div>
+                </Link>
               ))}
             </div>
           </div>
