@@ -41,57 +41,59 @@
             .section__left{
                 display: flex;
                 flex: 6;
-                .article{
-                    display: flex;
-                    gap: 30px;
-                    padding: 30px;
-                    .article__left{
-                        img{
-                            width: 160px;
-                            height: 160px;
-                        }
-                    }
-                    .article__right{
+                .articl__1{
+                    .article{
                         display: flex;
-                        flex-direction: column;
-                        gap: 20px;
-                        .top{
+                        gap: 30px;
+                        padding: 30px;
+                        .article__left{
+                            img{
+                                width: 160px;
+                                height: 160px;
+                            }
+                        }
+                        .article__right{
                             display: flex;
                             flex-direction: column;
                             gap: 20px;
-                            .lifestyle{
-                                color: #90b695;
-                                font-size: 23px;
+                            .top{
+                                display: flex;
+                                flex-direction: column;
+                                gap: 20px;
+                                .lifestyle{
+                                    color: #90b695;
+                                    font-size: 23px;
+                                }
+    
+                                h4{
+                                    font-size: 34px;
+                                    margin: 0;
+                                    font-weight: 600;
+                                    line-height: 1.1;
+                                }
+    
+                                p, span{
+                                    color: #90b695;
+                                    line-height: 28px;
+                                }
                             }
-
-                            h4{
-                                font-size: 34px;
-                                margin: 0;
-                                font-weight: 600;
-                                line-height: 1.1;
+    
+                            hr{
+                                border: 1px dashed #90b695;
                             }
-
-                            p, span{
-                                color: #90b695;
-                                line-height: 28px;
-                            }
-                        }
-
-                        hr{
-                            border: 1px dashed #90b695;
-                        }
-
-                        .bottom{
-                            display: flex;
-                            justify-content: space-between;
-                            img{
-                                width: 18px;
-                                height: 18px;
-
-                            }
-
-                            span{
-                                font-size: 12px;
+    
+                            .bottom{
+                                display: flex;
+                                justify-content: space-between;
+                                img{
+                                    width: 18px;
+                                    height: 18px;
+    
+                                }
+    
+                                span{
+                                    font-size: 12px;
+                                }
                             }
                         }
                     }
@@ -109,6 +111,7 @@
                     gap: 10px;
                     img{
                         width: 320px;
+                        align-self: center;
                         border-radius: 50%;
                     }
 
@@ -146,7 +149,7 @@
                     }
 
                     img{
-                        height: 400px !important;
+                        height: 320px !important;
                         object-fit: contain;
                     }
                 }

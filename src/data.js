@@ -182,3 +182,19 @@ export const gigs = [
     username: "Wilton Hunt",
   },
 ];
+export const posts = [
+    {
+      "title": "Mon premier article",
+      "date": "2022-01-01",
+      "desc": "Les réseaux sociaux sont apparus pour la première fois dans les années 2000, avec des sites comme Friendster, MySpace et LinkedIn. Cependant, c'est Facebook, lancé en 2004, qui a vraiment popularisé l'idée de réseaux sociaux en ligne. Depuis lors, les réseaux sociaux ont connu une croissance exponentielle",
+      "content": "Les réseaux sociaux sont apparus pour la première fois dans les années 2000, avec des sites comme Friendster, MySpace et LinkedIn. Cependant, c'est Facebook, lancé en 2004, qui a vraiment popularisé l'idée de réseaux sociaux en ligne. Depuis lors, les réseaux sociaux ont connu une croissance exponentielle, avec des milliards d'utilisateurs actifs dans le monde entier. En fait, selon une étude récente, plus de la moitié de la population mondiale utilise les réseaux sociaux. Les avantages des réseaux sociaux sont nombreux. Tout d'abord, ils permettent aux gens de se connecter avec des amis et des membres de leur famille qui vivent loin. Les réseaux sociaux offrent également des opportunités pour les entreprises et les entrepreneurs de se connecter avec des clients potentiels et de promouvoir leur marque. Les réseaux sociaux sont également un excellent moyen de rester informé des dernières nouvelles et des événements en temps réel.",
+      "img": "https://www.noiise.com/ressources/social-media/nouveaux-reseaux-sociaux-a-suivre/"
+    },
+    {
+      "title": "Mon deuxième article",
+      "date": "2022-01-05",
+      "desc": "Les réseaux sociaux sont apparus pour la première fois dans les années 2000, avec des sites comme Friendster, MySpace et LinkedIn. Cependant, c'est Facebook, lancé en 2004, qui a vraiment popularisé l'idée de réseaux sociaux en ligne. Depuis lors, les réseaux sociaux ont connu une croissance exponentielle",
+      "content": "Vestibulum sagittis odio sed nisi fermentum, vel venenatis ante maximus..."
+    }
+  ];
+

@@ -8,6 +8,7 @@ import banner from "./../../assets/banner.jpg";
 import insta1 from "./../../assets/insta_01.jpeg";
 import insta2 from "./../../assets/insta_03.jpeg";
 import insta3 from "./../../assets/insta_09.jpeg";
+import { posts } from "../../data";
 import "./home.scss";
 
 const Home = () => {
@@ -29,33 +30,32 @@ const Home = () => {
 
         <div className="container">
           <div className="section__left">
-            <div className="article">
-              <div className="article__left">
-                <img src={box3} alt="" />
-              </div>
-              <div className="article__right">
-                <div className="top">
-                  <span className="lifestyle">Lifestyle</span>
-                  <h4>
-                    <Link>How to Dress for Those In-Between Days</Link>
-                  </h4>
+            <div className="articl__1">
+              {posts.map((post) => (
+                <div className="article">
+                  <div key={post.id} className="article__left">
+                    <img src={box3} alt="" />
+                  </div>
+                  <div className="article__right">
+                    <div className="top">
+                      <span className="lifestyle">Lifestyle</span>
+                      <h4>
+                        <Link>{post.title}</Link>
+                      </h4>
 
-                  <span>
-                    <i> Posted on June 16, 2018 - By Amanda - 5 Comments</i>
-                  </span>
-                  <p>
-                    Sed pulvinar sapien eu eleifend mattis. Curabitur ipsum
-                    urna, aliquam a odio et, dapibus vulputate leo. Nulla nec
-                    libero vel nisl sollicitudin maximus. Aenean a tempus est.
-                    Praesent et dapibus turpis.
-                  </p>
+                      <span>
+                        <i> Posted on {post.date} - By Amanda - 5 Comments</i>
+                      </span>
+                      <p>{post.desc}</p>
+                    </div>
+                    <hr />
+                    <div className="bottom">
+                      <span>CONTINUE READING</span>
+                      <img src={share} alt="" />
+                    </div>
+                  </div>
                 </div>
-                <hr />
-                <div className="bottom">
-                  <span>CONTINUE READING</span>
-                  <img src={share} alt="" />
-                </div>
-              </div>
+              ))}
             </div>
           </div>
           <div className="section__right">
