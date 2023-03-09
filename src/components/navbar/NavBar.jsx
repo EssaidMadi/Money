@@ -48,7 +48,9 @@ const NavBar = () => {
           </div>
         )}
         <div className="right">
-          <span>Five Business</span>
+          <Link to="/blog">
+            <span>blog</span>
+          </Link>
           <span>Explore</span>
           <span>English</span>
           {!CurrentUser && <span>Sign in</span>}

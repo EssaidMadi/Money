@@ -4,27 +4,21 @@ import bard from "./../../assets/bardvs chat.jpg";
 import war from "./../../assets/war.png";
 import about from "./../../assets/about.jpg";
 import follow from "./../../assets/follow.png";
+import box3 from "./../../assets/box_03.jpg";
+import share from "./../../assets/share.png";
 import banner from "./../../assets/banner.jpg";
 import insta1 from "./../../assets/insta_01.jpeg";
 import insta2 from "./../../assets/insta_03.jpeg";
 import insta3 from "./../../assets/insta_09.jpeg";
-import "./details.scss";
-
-const Details = () => {
+import insta4 from "./../../assets/blog_01.png";
+import { posts } from "../../data";
+import "./accuielle.scss";
+const Accueil = () => {
   return (
-    <div className="details">
+    <div className="accueil">
       <div className="containers">
         <div className="title">
-          <div className="left">
-            <h1>Category by: Technologie</h1>
-            <p class="lead">
-              Under this category we share Technologie articles with you.
-            </p>
-          </div>
-
-          <div className="right">
-            <span>Matild / Tech</span>
-          </div>
+          <img src={insta4} alt="" />
         </div>
 
         <div className="container">
@@ -44,80 +38,50 @@ const Details = () => {
                   <span>
                     <i> Posted on 17 june - By Amanda - 5 Comments</i>
                   </span>
+                  <p>
+                    The fields of artificial intelligence (AI) and natural
+                    language processing (NLP) have grown exponentially in recent
+                    years, with advancements in technology leading to more
+                    sophisticated algorithms and models that can understand and
+                    generate human-like language.
+                  </p>
+                  <button>Continue Reading</button>
                 </div>
-
+                <hr />
                 <div className="bottoms">
                   <div className="article">
-                    <div className="article__left">
-                      <img src={war} alt="" />
+                    <div className="articl__1">
+                      {posts.map((post) => (
+                        <Link to="/detail/123">
+                          <div key={post.id} className="article">
+                            <div className="article__left">
+                              <img src={box3} alt="" />
+                            </div>
+                            <div className="article__right">
+                              <div className="top">
+                                <span className="lifestyle">Lifestyle</span>
+                                <h4>
+                                  <Link>{post.title}</Link>
+                                </h4>
+
+                                <span>
+                                  <i>
+                                    Posted on {post.date} - By Amanda - 5
+                                    Comments
+                                  </i>
+                                </span>
+                                <p>{post.desc}</p>
+                              </div>
+                              <hr />
+                              <div className="bottom">
+                                <span>CONTINUE READING</span>
+                                <img src={share} alt="" />
+                              </div>
+                            </div>
+                          </div>
+                        </Link>
+                      ))}
                     </div>
-                    <div className="article__right">
-                      <div className="top">
-                        <p>
-                          The fields of artificial intelligence (AI) and natural
-                          language processing (NLP) have grown exponentially in
-                          recent years, with advancements in technology leading
-                          to more sophisticated algorithms and models that can
-                          understand and generate human-like language. Two
-                          examples of these advancements are Bard and CHTGBT,
-                          two powerful language models that have made
-                          significant contributions to the field of AI.
-                        </p>
-                        <p>
-                          <b>
-                            Bard is a large-scale transformer-based language
-                            model that was developed by OpenAI in 2021. It is
-                            trained on a massive corpus of text data, including
-                            books, articles, and web pages, and is capable of
-                            generating highly coherent and fluent language in a
-                            variety of styles and genres.
-                          </b>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="all__article">
-                    <p>
-                      Bard has been used in a number of applications, including
-                      chatbots, language translation, and content generation,
-                      and is considered to be one of the most advanced language
-                      models currently available. CHTGBT, on the other hand, is
-                      a more specialized language model that was developed by a
-                      team of researchers at the University of California,
-                      Berkeley. Unlike Bard, which is trained on a wide range of
-                      text data, CHTGBT is specifically designed to generate
-                      coherent and informative responses to questions about
-                      computer hardware and technology. It is based on a
-                      transformer architecture and is trained on a large dataset
-                      of technical documents and manuals. Despite their
-                      different approaches and applications, Bard and CHTGBT
-                      share a number of similarities in terms of their
-                      underlying architecture and the algorithms they use to
-                      process language. Both models are based on the transformer
-                      architecture, which is a type of deep neural network that
-                      is particularly well-suited to language processing tasks.
-                      This architecture allows the models to learn and represent
-                      complex linguistic relationships and patterns, which
-                      enables them to generate highly coherent and contextually
-                      appropriate responses. Additionally, both models use a
-                      variety of techniques to improve their performance,
-                      including attention mechanisms, pre-training, and
-                      fine-tuning. Attention mechanisms allow the models to
-                      focus on specific parts of the input text when generating
-                      responses, which helps to ensure that their outputs are
-                      relevant and informative. Pre-training involves training
-                      the models on a large corpus of text data before
-                      fine-tuning them on specific tasks, which can improve
-                      their overall performance and speed up the training
-                      process. Overall, Bard and CHTGBT represent the cutting
-                      edge of AI and NLP research, and their development has led
-                      to significant advancements in a number of fields,
-                      including natural language generation, chatbots, and
-                      question-answering systems. As these models continue to
-                      evolve and improve, they are likely to become even more
-                      sophisticated and powerful, leading to new opportunities
-                      and challenges in the field of AI.
-                    </p>
                   </div>
                 </div>
               </div>
@@ -254,4 +218,4 @@ const Details = () => {
   );
 };
 
-export default Details;
+export default Accueil;

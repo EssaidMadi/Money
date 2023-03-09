@@ -4,6 +4,7 @@ import NavBar from "./components/navbar/NavBar";
 import Footer from "./components/footer/Footer";
 import Home from "./pages/home/Home";
 import Details from "./pages/details/Details";
+import Accueil from "./pages/accueil/Accueil";
 
 function App() {
   const Layout = () => {
@@ -22,12 +23,16 @@ function App() {
       element: <Layout />,
       children: [
         {
-          path: "/",
+          path: "/blog",
           element: <Home />,
         },
         {
           path: "/detail/:id",
           element: <Details />,
+        },
+        {
+          path: "/",
+          element: <Accueil />,
         },
       ],
     },

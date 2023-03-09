@@ -1,0 +1,271 @@
+.accueil{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+    .containers{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        gap: 20px;
+        .title{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            letter-spacing: 3px;
+            margin-bottom: 30px;
+
+            .left{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                left: 0;
+
+                p{
+                    color: #90b695;
+                }
+            }
+
+            .right{
+
+            }
+        }
+        .container{
+            display: flex;
+            gap: 50px;
+            width: 1400px;
+            justify-content: center;
+            margin: 20px auto;
+            .section__left{
+                display: flex;
+                flex: 6;
+                .articl__1{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5vw;
+                    .bard{
+                        width: 70%;
+                        align-self: center;
+                    }
+                    .intro{
+                        .top{
+                            display: flex;
+                            flex-direction: column;
+                            text-align: center;
+                            gap: 20px;
+                            color: #90b695;
+
+                            h4{
+                                font-size: 2rem;
+                                color: black !important;
+                            }
+
+                            button{
+                                width: 25%;
+                                padding: 15px 10px;
+                                align-self: center;
+                                border: 1px solid lightgray;
+                                border-radius: 5px;
+                                cursor: pointer;
+
+                                &:hover{
+                                    background-color: aqua;
+                                    color: white;
+                                    transition: 0.5s ease;
+                                }
+                            }
+                            
+
+                            p{
+                                padding: 0 100px;
+                            }
+                        }
+                    }
+
+                    hr{
+                        border: .1px dotted #90b695;
+                        margin: 40px 0;
+                        padding: 0 20px;
+                    }
+                    .bottoms{
+                        color: #90b695;
+                        line-height: 2.5;
+                        font-size: 15px;
+                        padding-left: 40px;
+                        .article{
+                            display: flex;
+                            gap: 30px;
+                            padding: 30px;
+
+                            
+                            .article__left{
+                                img{
+                                    width: 160px;
+                                    height: 160px;
+                                    object-fit: contain;
+                                }
+                            }
+                            .article__right{
+                                display: flex;
+                                flex-direction: column;
+                                gap: 20px;
+                                .top{
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 20px;
+                                    .lifestyle{
+                                        color: #90b695;
+                                        font-size: 23px;
+                                    }
+        
+                                    h4{
+                                        font-size: 34px;
+                                        margin: 0;
+                                        font-weight: 600;
+                                        line-height: 1.1;
+                                    }
+        
+                                    p, span{
+                                        color: #90b695;
+                                        line-height: 28px;
+                                    }
+                                }
+        
+                                hr{
+                                    border: 1px dashed #90b695;
+                                }
+        
+                                .bottom{
+                                    display: flex;
+                                    justify-content: space-between;
+                                    img{
+                                        width: 18px;
+                                        height: 18px;
+        
+                                    }
+        
+                                    span{
+                                        font-size: 12px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+    
+            .section__right{
+                display: flex;
+                flex-direction: column;
+                flex: 2;
+                gap: 40px;
+                .about{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    img{
+                        width: 320px;
+                        align-self: center;
+                        border-radius: 50%;
+                    }
+
+                    h3{
+                        text-align: center;
+                    }
+
+                    p{
+                        color: #90b695;
+                        line-height: 28px;
+                        text-align: center;
+                    }
+                }
+                .advertise{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+
+                    h3{
+                        text-align: center;
+                    }
+
+                    img{
+                        height: 300px !important;
+                        object-fit: contain;
+                    }
+                }
+                .Follow{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+
+                    h3{
+                        text-align: center;
+                    }
+
+                    img{
+                        height: 320px !important;
+                        object-fit: contain;
+                    }
+                }
+                .Blog{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+
+                    h3{
+                        text-align: center;
+                    }
+
+                    .blog__text{
+                        color: #90b695;
+                    }
+                    hr{
+                        border: 0.2px dashed #90b695;
+                    }
+                }
+                .Latest{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+
+                    h3{
+                        text-align: center;
+                    }
+                    .picture{
+                        display: flex;
+                        gap: 15px;
+                        
+                        .picture__left{
+                            img{
+                                width: 100px;
+                            }
+                        }
+                        .picture__right{
+                            line-height: 40px;
+                            small{
+                                color: #90b695;
+                            }
+                        }
+                    }
+                }
+    
+                .about{
+                    display: flex;
+                    gap: 20px;
+                    .links{
+                        display: flex;
+                        gap: 30px;
+                        flex-wrap: wrap;
+
+                        .link{
+                            border: 1px solid #90b695;
+                            padding: 5px 15px;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+}
